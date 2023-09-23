@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookshelf App</title>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="main.css">
 </head>
@@ -22,25 +22,27 @@
         <ul class="menu-items">
             <li><a href="#manage">Manage</a></li>
         </ul>
-        <h1 class="logo">Bookshelf App</h1>
+        <h4 class="logo">Bookshelf App</h4>
     </div>
 </nav>
 <body>
     <header>
         <div class="jumbotron">
-            <section class="right mobile">
+            <section class="right mobile" data-aos="fade-left">
                 <img src="public/asset/gulfer-ergin-LUGuCtvlk1Q-unsplash.jpg"
                     alt="Gambar Tumpukan Buku">
             </section>
-            <section class="left">
+            <section class="left" data-aos="fade-right">
                 <h1 class="title">
                     Welcome to our app
                 </h1>
                 <div class="subtitle">
-                    <p>Our web app provide you to manage your book in<br> Local Storage with beautiful <a href="https://apvarun.github.io/toastify-js/" target="_blank">Toastify</a></p>
+                    <h3>Our web app provide you to manage your book in<br> Local Storage with beautiful <a href="https://apvarun.github.io/toastify-js/" target="_blank">Toastify</a></h3>
+                    <br>
+                    <i>Bookshelf App designed to assist individuals or organizations in managing their book collections. Its purpose is to assist users in organizing, cataloging, and tracking the books they own, so they can easily find the books they are looking for and manage them more efficiently.</i>
                 </div>
             </section>
-            <section class="right desktop">
+            <section class="right desktop" data-aos="fade-left">
                 <img src="public/asset/gulfer-ergin-LUGuCtvlk1Q-unsplash.jpg"
                     alt="Gambar Tumpukan Buku">
             </section>
@@ -55,7 +57,7 @@
         </section>
 
         <section class="book-container">
-            <div class="book">
+            <div class="book" data-aos="fade-right">
                 <h2 class="h2 text-center">
                     <span>Book List</span>
                 </h2>
@@ -88,7 +90,7 @@
                 <div id="unfinished-read" class="list-group">
                 </div>
             </div>
-            <div class="book">
+            <div class="book" data-aos="fade-left">
                 <h2 class="h2 text-center">
                     <span>Finished Read</span>
                 </h2>
@@ -104,8 +106,11 @@
             <br>
         <h2>Made with ❤ with HTML5, CSS, JavaScript, and Toastify JS</h2>
     </footer>
+</body>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="main.js"></script>
-</body>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>

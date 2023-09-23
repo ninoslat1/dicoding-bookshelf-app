@@ -87,11 +87,11 @@ const renderBooks = (bookshelfApp) => {
     const listGroupItem = document.createElement("article");
     listGroupItem.classList.add("list-group-item");
 
-    // book detail
+    // Book Detail
     const bookDetail = document.createElement("div");
     bookDetail.classList.add("book-detail");
 
-    // book detail child
+    // Book Detail Child
     const bookTitle = document.createElement("b");
     bookTitle.innerHTML = books[book].title;
 
@@ -105,11 +105,11 @@ const renderBooks = (bookshelfApp) => {
 
     bookDetail.append(bookTitle, bookAuthor, bookYear);
 
-    // book action
+    // Book Action
     const bookAction = document.createElement("div");
     bookAction.classList.add("book-action");
 
-    // book action child
+    // Book Action Child
     const buttonRead = document.createElement("button");
 
     const iconCheck = document.createElement("i");
