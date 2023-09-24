@@ -64,7 +64,7 @@ body {
 }
 
 .navbar a:hover{
-    color: #5338ff;
+    color: #2fff36;
 }
 
 h1,
@@ -128,7 +128,6 @@ header {
 
 .jumbotron {
   text-align: center;
-  margin: 32px;
   display: flex;
   flex-direction: row;
   padding: 10vh;
@@ -151,11 +150,9 @@ header {
 }
 
 .jumbotron img {
-  right: 0;
-  top: 0;
   position: absolute;
-  width: 50%;
-  height: 100%;
+  width: 25%;
+  height: 50%;
   border-radius: 14px;
 }
 
