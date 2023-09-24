@@ -71,8 +71,8 @@ const unfinishedRead = (book) => {
 };
 
 // Display Book to HTML
-const unfinishedReadId = "unfinished-read";
-const finishedReadId = "finished-read";
+const unfinishedReadId = "unfinishedBook";
+const finishedReadId = "finishedBook";
 
 const renderBooks = (bookshelfApp) => {
   const books = bookshelfApp;
@@ -396,7 +396,7 @@ saveBook.addEventListener("click", function () {
   }
 });
 
-//  button clear event handler
+// Button Clear Event Handler
 buttonClear.addEventListener("click", () => {
   let confirmClearAll = confirm(
     "Are you sure you want to clean up all the books?"
