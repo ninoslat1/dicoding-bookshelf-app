@@ -101,7 +101,7 @@ const renderBooks = (bookshelfApp) => {
 
     const bookYear = document.createElement("p");
     bookYear.classList.add("small");
-    bookYear.innerHTML = "Year: " + books[book].year;
+    bookYear.innerHTML = "Year: " + books[book].year.toString();
 
     bookDetail.append(bookTitle, bookAuthor, bookYear);
 
@@ -154,7 +154,7 @@ const renderBooks = (bookshelfApp) => {
 
       title.value = books[book].title;
       author.value = books[book].author;
-      year.value = books[book].year;
+      year.value = books[book].year.toString();
       isComplete.checked = books[book].isComplete;
       
       updateBook.addEventListener("click", () => {
@@ -162,7 +162,7 @@ const renderBooks = (bookshelfApp) => {
           id: books[book].id,
           title: title.value,
           author: author.value,
-          year: year.value,
+          year: parseInt(year.value),
           isComplete: isComplete.checked,
         };
         // Check Input Field
@@ -305,7 +305,7 @@ saveBook.addEventListener("click", function () {
     id: +new Date(),
     title: title.value,
     author: author.value,
-    year: year.value,
+    year: parseInt(year.value),
     isComplete: isComplete.checked,
   };
 
